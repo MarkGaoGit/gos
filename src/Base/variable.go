@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -13,11 +13,11 @@ func FcVariable() {
 	var e bool
 
 	var (
-		f int
-		g string
+		f       int
+		g       string
 		userAge = 30
-		HOME = os.Getenv("HOME")
-		GOROOT = os.Getenv("GOROOT")
+		HOME    = os.Getenv("HOME")
+		GOROOT  = os.Getenv("GOROOT")
 	)
 
 	user := "mark"
@@ -54,7 +54,6 @@ func FcVariable() {
 	//https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/04.4.md
 	//4.4.5 init 函数
 
-
 }
 
 var tmpStr = "c"
@@ -69,6 +68,7 @@ func Example2() {
 }
 
 var a string
+
 func F1() {
 	a = "A"
 	print(a)

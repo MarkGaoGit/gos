@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -27,13 +27,8 @@ func FibonacciBody(n int) (res uint64) {
 	if n <= 1 {
 		res = 1
 	} else {
-		res = FibonacciBody(n - 1) + FibonacciBody(n - 2)
+		res = FibonacciBody(n-1) + FibonacciBody(n-2)
 	}
 	fibs[n] = res
 	return
 }
-
-
-
-
-

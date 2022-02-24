@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import "fmt"
 
@@ -42,4 +42,3 @@ func Bb() {
 	fmt.Println("in b")
 	Aa()
 }
-

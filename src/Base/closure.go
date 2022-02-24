@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -9,8 +9,7 @@ func BBao() {
 	sum := 0
 	for i := 0; i <= 10; i++ {
 
-		fc := func(i int) { sum += 1}
-
+		fc := func(i int) { sum += 1 }
 
 		fc(i)
 	}
@@ -31,7 +30,6 @@ func NMing() (ret int) {
 	}()
 	return 1
 }
-
 
 func MakeFileSuffix(suffix string) func(string) string {
 	return func(name string) string {

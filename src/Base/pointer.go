@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import "fmt"
 
@@ -13,4 +13,3 @@ func Pointer() {
 	fmt.Printf("内存地址%p, 引用的值%d", intP, *intP)
 
 }
-

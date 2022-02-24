@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import "fmt"
 
@@ -17,7 +17,6 @@ func CusFunction() {
 
 	sumN = SumNumber(num, nums)
 	fmt.Printf("he = %d \n", sumN)
-
 
 	minN = JianNumber(num, nums)
 	fmt.Printf("jian = %d \n", minN)
@@ -56,7 +55,6 @@ func SumNumber(p1, p2 int) (he int) {
 func JianNumber(p1, p2 int) (ji int) {
 	return p2 - p1
 }
-
 
 func CNumber(p1, p2 int) (cNumber int) {
 	cNumber = p1 * p2

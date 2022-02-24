@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -10,7 +10,6 @@ func DateAndTime() {
 
 	nowTime := time.Now()
 	fmt.Println(nowTime)
-
 
 	fmt.Printf("%d-%02d-%d %d:%d:%d \n",
 		nowTime.Year(),

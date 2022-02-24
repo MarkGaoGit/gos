@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -44,7 +44,3 @@ func StringS() {
 	fmt.Println(strconv.Itoa(age))
 
 }
-
-
-
-

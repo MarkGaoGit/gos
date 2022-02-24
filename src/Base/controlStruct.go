@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -73,7 +73,7 @@ func ControlStruct() {
 	}
 
 	for i, j, s := 0, 5, "a"; i < 3 && j < 100 && s != "aaaaa"; i, j,
-		s = i+1, j+1, s + "a" {
+		s = i+1, j+1, s+"a" {
 		fmt.Println("Value of i, j, s:", i, j, s)
 	}
 
@@ -87,24 +87,23 @@ func ControlStruct() {
 	//}
 	//goto POINT
 
-
 	iof := 0
 	for {
 
-		if iof >= 3 { break }
+		if iof >= 3 {
+			break
+		}
 		//break out of this for loop when this condition is met
 		fmt.Println("Value of i is:", iof)
 		iof++
 	}
 	fmt.Println("A statement just after for loop.")
 
-	for i := 0; i<7 ; i++ {
-		if i%2 == 0 { continue }
+	for i := 0; i < 7; i++ {
+		if i%2 == 0 {
+			continue
+		}
 		fmt.Println("Odd:", i)
 	}
 
-
 }
-
-
-

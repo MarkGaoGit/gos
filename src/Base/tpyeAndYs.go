@@ -1,4 +1,4 @@
-package c4
+package Base
 
 import (
 	"fmt"
@@ -10,10 +10,9 @@ var n int16 = 40
 var m int32
 
 // Ys 运算符
-func Ys()  {
+func Ys() {
 	m = int32(n)
 	print(m)
-
 
 	b := 1.1
 	c := 2
@@ -26,7 +25,7 @@ func Ys()  {
 
 }
 
-func Uint8FromIn(n int) (uint8, error){
+func Uint8FromIn(n int) (uint8, error) {
 	if 0 <= n && n <= math.MaxUint8 {
 		return uint8(n), nil
 	}
