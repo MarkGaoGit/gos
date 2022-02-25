@@ -129,6 +129,25 @@ func CusSlice() {
 	r1, r2 := StrCup("This is testing", 3)
 	fmt.Println(r1, r2)
 
+	//go 实现的冒泡
+	Mp()
+}
+
+func Mp() {
+	arr := []int{10, 2, 3, 1, 9, 5, 4}
+
+	fmt.Println(arr)
+	for i := 0; i < len(arr); i++ {
+		for j := i + 1; j <= len(arr)-1; j++ {
+			if arr[i] > arr[j] {
+				tmp := arr[i]
+				arr[i] = arr[j]
+				arr[j] = tmp
+			}
+		}
+	}
+	fmt.Println(arr)
+
 }
 
 func StrCup(s string, i int) (r1 string, r2 string) {
