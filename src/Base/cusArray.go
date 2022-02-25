@@ -3,8 +3,8 @@ package Base
 import "fmt"
 
 const (
-	WIDTH  = 2
-	HEIGHT = 3
+	WIDTH  = 10
+	HEIGHT = 5
 )
 
 type pixel int
