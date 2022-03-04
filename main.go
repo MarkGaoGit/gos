@@ -4,5 +4,5 @@ import "gos/src/Base"
 
 func main() {
 
-	Base.MyPackage()
+	Base.StructMethod()
 }
