@@ -9,6 +9,9 @@ import (
 	"unsafe"
 )
 
+// 小写字母开头的函数 只作用于包内
+// 大写字母开头的函数 包外也是可见的
+
 func MyPackage() {
 
 	MyList()
