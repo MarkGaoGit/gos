@@ -18,13 +18,13 @@ type Engine interface {
 	End()
 }
 
-type Car struct {
+type Che struct {
 	Engine
 	wheelCount int
 }
 
 type Mercedes struct {
-	Car
+	Che
 }
 
 type TowInts struct {
@@ -63,21 +63,21 @@ func (c *Mercedes) sayHiToMerkel() {
 	c.numberOfWheels()
 }
 
-func (c *Car) GoToWork() {
+func (c *Che) GoToWork() {
 	c.Start()
 	c.End()
 }
 
-func (c *Car) numberOfWheels() int {
+func (c *Che) numberOfWheels() int {
 	return c.wheelCount
 }
 
-func (c Car) Start() {
-	fmt.Println("car Start")
+func (c Che) Start() {
+	fmt.Println("Che Start")
 }
 
-func (c *Car) End() {
-	fmt.Println("car End")
+func (c *Che) End() {
+	fmt.Println("Che End")
 }
 
 // Height 设置和获取三角形的基础信息
