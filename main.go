@@ -4,6 +4,6 @@ import "gos/src/Base"
 
 func main() {
 
-	Base.CopyFile()
+	Base.ReadParams()
 
 }
