@@ -1,9 +1,15 @@
 package main
 
-import "gos/src/Base"
+import (
+	"fmt"
+	"gos/src/High"
+)
+
+func init() {
+	fmt.Println("====================================program start!========================================")
+}
 
 func main() {
 
-	Base.ExecCommand()
-
+	High.MeChan()
 }

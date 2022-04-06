@@ -1,2 +1,6 @@
 2022-03-10 10:50:21 | ERROR | 12 | 622967512eaaf | 1646880621.532 | Cannot use object of type AppBundle\Entity\SysApiSecret as array | organFile->/var/www/html/rp/sysconfig/src/AppBundle/Security/ApiOutAuthenticator.php | organLine->176 | file->/var/www/html/rp/sysconfig/src/AppBundle/Utils/ExceptionHelper.php | line->86 | class->AppBundle\Utils\ExceptionHelper | function->afterAction
 2022-04-10 11:05:39 | ERROR | 10 | 62296af991174 | 1646881539.391 | You have requested a non-existent service "snc_redis.clients.cache". | organFile->/var/www/html/rp/sysconfig/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php | organLine->348 | file->/var/www/html/rp/sysconfig/src/AppBundle/Utils/ExceptionHelper.php | line->86 | class->AppBundle\Utils\ExceptionHelper | function->afterAction
+102040801020408010
+20
+40
+80
