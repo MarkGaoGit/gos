@@ -10,5 +10,5 @@ func init() {
 }
 
 func main() {
-	High.ChanTicker()
+	High.EventJob()
 }
