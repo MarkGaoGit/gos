@@ -13,7 +13,7 @@ func init() {
 func main() {
 	start := time.Now()
 
-	High.ServerAndClient()
+	High.RequestLimit()
 
 	end := time.Now()
 	diff := end.Sub(start)
