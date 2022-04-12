@@ -3,12 +3,19 @@ package main
 import (
 	"fmt"
 	"gos/src/High"
+	"time"
 )
 
 func init() {
-	fmt.Println("====================================program start!========================================")
+	fmt.Println("==============program start!==============")
 }
 
 func main() {
-	High.EventJob()
+	start := time.Now()
+
+	High.ServerAndClient()
+
+	end := time.Now()
+	diff := end.Sub(start)
+	fmt.Printf("==============program end %s!==============", diff)
 }
