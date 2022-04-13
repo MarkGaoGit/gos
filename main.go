@@ -13,7 +13,7 @@ func init() {
 func main() {
 	start := time.Now()
 
-	High.RequestLimit()
+	High.LianSProcess()
 
 	end := time.Now()
 	diff := end.Sub(start)
