@@ -13,7 +13,7 @@ func init() {
 func main() {
 	start := time.Now()
 
-	High.LianSProcess()
+	High.BfGetObject()
 
 	end := time.Now()
 	diff := end.Sub(start)
