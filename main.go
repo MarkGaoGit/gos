@@ -1,8 +1,6 @@
 package main
 
-import (
-	Web "gos/src/Web/Server"
-)
+import "gos/src/Web"
 
 func init() {
 	//fmt.Println("==============program start!==============")
@@ -11,7 +9,7 @@ func init() {
 func main() {
 	//start := time.Now()
 
-	Web.HttpServer()
+	Web.RequestAndReadPage()
 
 	//end := time.Now()
 	//diff := end.Sub(start)
