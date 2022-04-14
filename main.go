@@ -1,21 +1,19 @@
 package main
 
 import (
-	"fmt"
-	"gos/src/High"
-	"time"
+	"gos/src/Web"
 )
 
 func init() {
-	fmt.Println("==============program start!==============")
+	//fmt.Println("==============program start!==============")
 }
 
 func main() {
-	start := time.Now()
+	//start := time.Now()
 
-	High.BfGetObject()
+	Web.TcpServerClient()
 
-	end := time.Now()
-	diff := end.Sub(start)
-	fmt.Printf("==============program end %s!==============", diff)
+	//end := time.Now()
+	//diff := end.Sub(start)
+	//fmt.Printf("==============program end %s!==============", diff)
 }
