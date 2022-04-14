@@ -1,4 +1,4 @@
-package main
+package Web
 
 import (
 	"flag"
@@ -8,7 +8,7 @@ import (
 
 const maxRead = 512
 
-func main() {
+func TcpMain() {
 	flag.Parse()
 	if flag.NArg() != 2 {
 		panic("Error: 启动服务需要传入地址 和 端口号")

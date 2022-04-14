@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gos/src/Web"
+	Web "gos/src/Web/Server"
 )
 
 func init() {
@@ -11,7 +11,7 @@ func init() {
 func main() {
 	//start := time.Now()
 
-	Web.TcpServerClient()
+	Web.HttpServer()
 
 	//end := time.Now()
 	//diff := end.Sub(start)
