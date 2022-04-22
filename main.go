@@ -9,7 +9,8 @@ func init() {
 func main() {
 	//start := time.Now()
 
-	Web.FormServer()
+	go Web.RPCServer()
+	Web.RPCClient()
 
 	//end := time.Now()
 	//diff := end.Sub(start)
