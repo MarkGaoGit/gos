@@ -20,7 +20,7 @@ type Dove struct {
 // 请求 和 获取请求的页面
 //https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/15.3.md
 func RequestAndReadPage() {
-	urlPath := "https://dove-test.rp-field.com"
+	urlPath := "https://dove.rp-field.com"
 
 	content, err := http.Get(urlPath)
 	checkError(err)

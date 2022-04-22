@@ -9,7 +9,7 @@ func init() {
 func main() {
 	//start := time.Now()
 
-	Web.RequestAndReadPage()
+	Web.FormServer()
 
 	//end := time.Now()
 	//diff := end.Sub(start)
