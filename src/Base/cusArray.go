@@ -46,6 +46,14 @@ func CusArray() {
 		}
 	}
 
+	map1 := make(map[string]int)
+	map1["New Delhi"] = 55
+	map1["Beijing"] = 20
+	map1["Washington"] = 25
+	if _, ok := map1["Beijing"]; ok {
+		fmt.Println(123)
+	}
+
 	// 如果是大型数组则传入地址 函数中使用指针接收参数
 	// 函数中的值变更后 传入的值也会变
 	Fp2(&screen)
