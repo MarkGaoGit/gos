@@ -1,6 +1,8 @@
 package main
 
-import "gos/src/Web"
+import (
+	"gos/src/Web"
+)
 
 func init() {
 	//fmt.Println("==============program start!==============")
@@ -10,7 +12,9 @@ func init() {
 func main() {
 	//start := time.Now()
 
-	Web.ShiyongFunc()
+	//Web.ShiyongFunc()
+
+	Web.FormServer()
 
 	//end := time.Now()
 	//diff := end.Sub(start)

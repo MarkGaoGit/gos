@@ -23,9 +23,9 @@ func ChanTicker() {
 	//timeDiffer := time.Duration(1) * time.Second
 	//crontabJob(timeDiffer)
 
-	timeLimit()
+	//timeLimit()
 
-	//afterJob()
+	afterJob()
 }
 
 //定时任务的概念

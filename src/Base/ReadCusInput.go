@@ -14,9 +14,9 @@ var (
 func ReadCusInput() {
 
 	//读取用户输入的姓名
-	//fmt.Println("place input name")
-	//fmt.Scanln(&firstName, &lastName)
-	//fmt.Println(firstName, lastName)
+	fmt.Println("place input name")
+	fmt.Scanln(&firstName, &lastName)
+	fmt.Println(firstName, lastName)
 
 	inputReader := bufio.NewReader(os.Stdin)
 

@@ -3,30 +3,28 @@ package Base
 import (
 	"container/list"
 	"fmt"
-	"gos/src/MPack"
 	"regexp"
 	"strconv"
-	"unsafe"
 )
 
 // 小写字母开头的函数 只作用于包内
 // 大写字母开头的函数 包外也是可见的
 
 func MyPackage() {
-
-	MyList()
-
-	byteSize := 10
-	fmt.Println(unsafe.Sizeof(byteSize))
+	//
+	//MyList()
+	//
+	//byteSize := 10
+	//fmt.Println(unsafe.Sizeof(byteSize))
 
 	MyRegexpMatch("This is test string 1000.3")
-	fmt.Println(0.1 + 0.2)
-
-	//自定义包
-	fmt.Println(MPack.MDay("mark"))
-	fmt.Println(MPack.MNight("mark"))
-	fmt.Println(MPack.IsAm())
-	fmt.Println(MPack.IsPm())
+	//fmt.Println(0.1 + 0.2)
+	//
+	////自定义包
+	//fmt.Println(MPack.MDay("mark"))
+	//fmt.Println(MPack.MNight("mark"))
+	//fmt.Println(MPack.IsAm())
+	//fmt.Println(MPack.IsPm())
 
 }
 

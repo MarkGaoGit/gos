@@ -20,7 +20,7 @@ func UseSelect() {
 	processFibonacci()
 
 	//协程生成随机数列 0 和 1
-	processRandom01()
+	//processRandom01()
 
 }
 
