@@ -1,22 +1,24 @@
 package main
 
 import (
-	"gos/src/Web"
+	"fmt"
+	"gos/src/Base"
+	"time"
 )
 
 func init() {
-	//fmt.Println("==============program start!==============")
+	fmt.Println("==============program start!==============")
 }
 
 // https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/16.0.md
 func main() {
-	//start := time.Now()
+	start := time.Now()
 
 	//Web.ShiyongFunc()
 
-	Web.FormServer()
+	Base.ReadCusInput()
 
-	//end := time.Now()
-	//diff := end.Sub(start)
-	//fmt.Printf("==============program end %s!==============", diff)
+	end := time.Now()
+	diff := end.Sub(start)
+	fmt.Printf("==============program end %s!==============", diff)
 }

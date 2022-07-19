@@ -13,22 +13,22 @@ func MeChan() {
 
 	go setData(ch)
 	go getData(ch)
-
-	arr := []int{1, 2, 3, 4, 5}
-	go sum(arr, ch)
-	sum := <-ch
-	fmt.Printf("求和结果%d\n", sum)
-
-	//工厂模式
-	stream := chanFactory()
-	go popFactory(stream)
-
-	sendChan := make(chan int)
-	receiveChan := make(chan string)
-
-	//输入 输出
-	//go setData(sendChan)
-	go processChannel(sendChan, receiveChan)
+	//
+	//arr := []int{1, 2, 3, 4, 5}
+	//go sum(arr, ch)
+	//sum := <-ch
+	//fmt.Printf("求和结果%d\n", sum)
+	//
+	////工厂模式
+	//stream := chanFactory()
+	//go popFactory(stream)
+	//
+	//sendChan := make(chan int)
+	//receiveChan := make(chan string)
+	//
+	////输入 输出
+	////go setData(sendChan)
+	//go processChannel(sendChan, receiveChan)
 	//go getData(receiveChan)
 
 	//打印素数
