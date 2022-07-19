@@ -29,6 +29,7 @@ func main() {
 
 	//userService.UserCreate 调用了用户为服务下面的用户创建方法
 	//RPC调用的返回必须是一个指针类型
+	// RPC传输的数据使用的gob方式
 	err = client.Call("userService.UserCreate", UserCreate{
 		Name: "mark",
 		Age:  33,
