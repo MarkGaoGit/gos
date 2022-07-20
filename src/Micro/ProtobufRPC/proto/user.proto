@@ -1,0 +1,27 @@
+syntax = "proto3";
+option go_package = "./userService";
+
+//定义RPC服务
+//编译命令  protoc --go_out=plugins=grpc:./ *.proto
+service userService {
+  rpc UserCreate(UserCreateRequest) returns (UserResponse); //需要实现的接口 也就是可被外部调用的方法
+}
+
+message userModel {
+  string name = 1;
+  int32 age = 2;
+}
+
+message UserCreateRequest {
+   userModel params = 1;
+}
+
+message UserInfo {
+  repeated userModel userList = 1;
+}
+
+message UserResponse {
+  bool success = 1;
+  string message = 2;
+
+}
