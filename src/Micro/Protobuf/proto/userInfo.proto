@@ -1,0 +1,17 @@
+syntax = "proto3";  //固定语法 选择版本
+
+                  //编译后再 user目录下 生成userInfo的文件 也可以省略文件名
+//option go_package = "./user;userInfo";
+option go_package = "./userService";
+
+//生成文件的命令
+//protoc --go_out=./ *.proto
+
+message userInfo {
+  // 类型 属性名称 顺序
+  string name = 1;
+  int32  age = 2;
+
+  //切片 使用重复repeated 即可
+  repeated string other = 3;
+}
