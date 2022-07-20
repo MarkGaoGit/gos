@@ -33,6 +33,19 @@ func (u *User) UserCreate(uc UserCreate, ucr *UserResponse) error {
 	return nil
 }
 
+// Coupon 第二个RPC模块
+type Coupon struct {
+	Id int
+}
+
+func (c Coupon) CouponSet(cou Coupon, res *string) error {
+	fmt.Println(cou)
+
+	*res = "This is coupon"
+
+	return nil
+}
+
 //RPC服务
 //改成了可支持多语言调用的json_rpc
 // 只有67行和普通rpc不同
@@ -46,6 +59,9 @@ func main() {
 		fmt.Println("rpc服务注册失败" + err.Error())
 		return
 	}
+
+	// 再启动一个rpc模块
+	rpc.RegisterName("userCoupon", new(Coupon))
 
 	listen, err := net.Listen("tcp", "10.2.4.216:2000")
 	if err != nil {

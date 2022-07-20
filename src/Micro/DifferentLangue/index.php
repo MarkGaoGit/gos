@@ -47,3 +47,8 @@ $rpcServer = new JsonRPC('10.2.4.216', '2000');
 $response = $rpcServer->Call('userService.UserCreate', $user);
 var_dump($response);
 
+$result = $rpcServer->Call('userCoupon.CouponSet', [
+    'id' => 100,
+]);
+
+var_dump($result);
