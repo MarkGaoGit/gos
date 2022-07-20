@@ -1,0 +1,24 @@
+syntax = "proto3";  //固定语法 选择版本
+
+                  //编译后再 user目录下 生成userInfo的文件 也可以省略文件名
+//option go_package = "./user;userInfo";
+option go_package = "./orderService";
+
+//生成文件的命令
+//protoc --go_out=./ *.proto
+
+message Order {
+  int64  id = 1;
+  string orderNum = 2;
+  double  amount = 3;
+  GoodsItem GoodsItem = 4;
+}
+
+message GoodsItem {
+  int64 goodsId = 1;
+  string goodsName = 2;
+  int32 goodsNum = 3;
+}
+
+//嵌套发现
+// 嵌套中的message 在外层需要使用小写字母
